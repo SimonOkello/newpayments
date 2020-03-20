@@ -4290,6 +4290,9 @@ abbr[title], abbr[data-original-title] {
 	.banner1, .banner2, .banner3, .banner4 {
 		min-height: 670px;
 	}
+	header{
+		position: inherit;
+	}
 }
 @media(max-width:1366px){
 	.caption h3 {
@@ -4303,6 +4306,9 @@ abbr[title], abbr[data-original-title] {
 	}
 	h3.m-head {
 		font-size: 25px;
+	}
+	header{
+		position: inherit;
 	}
 }
 @media(max-width:1280px){
@@ -4321,6 +4327,9 @@ abbr[title], abbr[data-original-title] {
 	}
 	h3.icon-subheading {
 		font-size: 26px;
+	}
+	header{
+		position: inherit;
 	}
 }
 @media(max-width:1200px){
@@ -4348,6 +4357,9 @@ abbr[title], abbr[data-original-title] {
 	}
 	.movie-ticket-book img {
 		width: 100%;
+	}
+	header{
+		position: inherit;
 	}
 }
 @media(max-width:1080px){
@@ -4443,6 +4455,9 @@ abbr[title], abbr[data-original-title] {
 	.agileits-amet-sed:nth-child(5) {
 		margin-top: 4%;
 	}	
+	header{
+		position: inherit;
+	}
 }
 @media(max-width:1050px){
 	.w3-subscribe {
@@ -4478,6 +4493,9 @@ abbr[title], abbr[data-original-title] {
 	h3.agileits-icons-title {
 		font-size: 32px;
 	}
+	header{
+		position: inherit;
+	}
 }
 @media(max-width:1024px){
 	.banner1, .banner2, .banner3, .banner4 {
@@ -4511,6 +4529,9 @@ abbr[title], abbr[data-original-title] {
 	}
 	.faq-w3agile .faq > li > a {
 		font-size: 16px;
+	}
+	header{
+		position: inherit;
 	}
 }
 @media(max-width:991px){
@@ -4643,6 +4664,9 @@ abbr[title], abbr[data-original-title] {
 	div.seatCharts-container {
 		width: 58%;
 	}
+	header{
+		position: inherit;
+	}
 }
 @media(max-width:900px){
 	.banner1, .banner2, .banner3, .banner4 {
@@ -4683,6 +4707,9 @@ abbr[title], abbr[data-original-title] {
 	}
 	label.radio, .checkbox {
 		font-size: 18px;
+	}
+	header{
+		position: inherit;
 	}
 }
 @media(max-width:800px){
@@ -4743,6 +4770,9 @@ abbr[title], abbr[data-original-title] {
 		width: 58%;
 		margin-top: 30px;
 	}
+	header{
+		position: inherit;
+	}
 }
 @media(max-width:768px){
 	.logo h1 {
@@ -4773,6 +4803,9 @@ abbr[title], abbr[data-original-title] {
 	}
 	.help h5, .privacy-w3row h5 {
 		font-size: 18px;
+	}
+	header{
+		position: inherit;
 	}
 }
 @media(max-width:736px){
@@ -4810,6 +4843,9 @@ abbr[title], abbr[data-original-title] {
 	}
 	.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
 		padding: 8px 12px;
+	}
+	header{
+		position: inherit;
 	}
 }
 @media(max-width:667px){
@@ -4905,6 +4941,9 @@ abbr[title], abbr[data-original-title] {
 	.booking-details {
 		width: 65%;
 	}
+	header{
+		position: inherit;
+	}
 }
 @media(max-width:600px){
 	.caption {
@@ -4936,6 +4975,9 @@ abbr[title], abbr[data-original-title] {
 	}
 	.booking-details {
 		width: 80%;
+	}
+	header{
+		position: inherit;
 	}
 }
 @media(max-width:568px){
@@ -4990,6 +5032,9 @@ abbr[title], abbr[data-original-title] {
 	}
 	.w3ls-supportform select {
 		width: 50%;
+	}
+	header{
+		position: inherit;
 	}
 }
 @media(max-width:480px){
@@ -5152,6 +5197,9 @@ abbr[title], abbr[data-original-title] {
 	.booking-details {
 		width: 100%;
 	}
+	header{
+		position: inherit;
+	}
 }
 @media(max-width:414px){
 	.logo h1 {
@@ -5248,6 +5296,9 @@ abbr[title], abbr[data-original-title] {
 	.front {
 		margin: 5px 4px 25px 5px;
 	}
+	header{
+		position: inherit;
+	}
 }
 @media(max-width:384px){
 	.movie-preview {
@@ -5335,6 +5386,9 @@ abbr[title], abbr[data-original-title] {
 		width: 23px;
 		line-height: 23px;
 	}
+	header{
+		position: inherit;
+	}
 }
 @media(max-width:375px){
 	.movie-preview {
@@ -5379,6 +5433,9 @@ abbr[title], abbr[data-original-title] {
 	}
 	div.seatCharts-cell {
 		margin: 1px;
+	}
+	header{
+		position: inherit;
 	}
 }
 @media(max-width:320px){
@@ -5473,5 +5530,8 @@ abbr[title], abbr[data-original-title] {
 		width: 19px;
 		font-size: 10px;
 		line-height: 20px;
+	}
+	header{
+		position: inherit;
 	}
 }
