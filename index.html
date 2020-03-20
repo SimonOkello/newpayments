@@ -14,6 +14,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link rel="stylesheet" href="css/bootstrap-select.css"><!-- bootstrap-select-CSS -->
 <!-- <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />Fontawesome-CSS -->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+$(function() {
+    $("[name=toggler]").click(function(){
+            $('.toHide').hide();
+            $("#blk-"+$(this).val()).show('slow');
+    });
+ });
+</script>
 <script type='text/javascript' src='js/jquery-2.2.3.min.js'></script>
 <script src="https://use.fontawesome.com/61515e626a.js"></script>
 <!-- Custom Theme files -->
@@ -44,7 +53,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="logo">
 				<h1><a href="index.html">Alladin Payments</a></h1>
 			</div>
-		<!--//logo-->
+        <!--//logo-->
+        <div class="w3layouts-login ml-10">
+                <a  href="#"><i class="fa fa-question-circle"> </i>FAQs</a>
+                
+            </div>  
+            <div class="w3layouts-login">
+				<a  href="#"><i class="fa fa-user-circle"> Customer Support</i></a>
+			</div>  
 				<div class="clearfix"></div>
     </div>
 </header>
@@ -87,7 +103,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			     <div class="tab-grids">
                     <div id="tab1" class="tab-grid">  
 		                      <div class="login-form">	
-						<form action="pay.html" method="post" id="signup">
+						<form action="index.html" method="post" id="signup">
 						<ol>
                             <li>
                                 <div class="agileits-select">
@@ -123,11 +139,43 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="mobile-right ">
                                     <h4>How do you want to pay?</h4>
                                     <div class="mobile-rchge">
-                                      <label class="radio"><input type="radio" name="paymentOption" checked="">Mpesa</label>
-                                      <label class="radio"><input type="radio" name="paymentOption" checked="">EazzyPay</label>
+                                      <label class="radio"><input type="radio" id="rdb1" value="1" name="toggler" >Mpesa</label>
+                                      <label class="radio"><input type="radio" id="rdb2" value="2" name="toggler" >EazzyPay</label>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
+                            </li>
+                            <li>
+                            <div id="blk-1" class="toHide" style="display:none">
+                             
+                                <div class="mobile-right ">
+                                    <h4>Enter Your Mpesa Number here E.g 0712345678</h4>
+                                    <div class="mobile-rchge">
+                                      <input type="tel" id="tel" name="mpesa" pattern="\d{10}" placeholder="E.g 0712345678" />
+                                      <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
+                                        <span class="valid">That's what we wanted!</span>
+                                    </p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            
+                            </div>
+                            </li>
+                            <li>
+                            <div id="blk-2" class="toHide" style="display:none">
+                             
+                                <div class="mobile-right ">
+                                    <h4>Enter Your EazzyPay Number here E.g 0712345678</h4>
+                                    <div class="mobile-rchge">
+                                      <input type="tel" id="tel" name="eazzypay" pattern="\d{10}" placeholder="E.g 0712345678" />
+                                      <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
+                                        <span class="valid">That's what we wanted!</span>
+                                    </p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                           
+                            </div>
                             </li>
                             <li>
                                 <input type="submit" class="submit" value="Recharge Now" />

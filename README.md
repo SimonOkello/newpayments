@@ -1,6 +1,6 @@
-# New Payents
+# New Payments
 
-**New Payents** is a template that allows one to buy airtime and pay bills.
+**New Payments** is a template that allows one to buy airtime and pay bills.
 
 ## Prerequisites
 
