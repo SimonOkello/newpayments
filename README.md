@@ -1,4 +1,4 @@
-# Asker
+# New Payents
 
 **New Payents** is a template that allows one to buy airtime and pay bills.
 
