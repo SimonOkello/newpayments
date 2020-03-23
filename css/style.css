@@ -92,6 +92,11 @@ i.glyphicon.glyphicon-menu-hamburger {
     pointer-events:none;
     opacity:0.6;        
 }
+.searchBillers{
+	padding-bottom: 1%;
+	margin:50px 5px 0px 5px;
+	border: 2px solid #EB6625;
+}
 /* END DISABLE */
 /*--- slider-css --*/
 .slider {
@@ -2521,7 +2526,7 @@ span.agile-breadcrumbs a i:hover  {
 h3.w3-head {
     color: #EB6625;
     font-size: 35px;
-    margin: 0 0 35px 0;
+    margin: 120px 0 35px 0;
 }
 .feed-back h3 {
 	font-weight: 400;
@@ -4293,6 +4298,11 @@ abbr[title], abbr[data-original-title] {
 	header{
 		position: inherit;
 	}
+	.searchBillers{
+		padding-bottom: 1%;
+		margin:28px 3px -12px 3px;
+		border: 2px solid #EB6625;
+}
 }
 @media(max-width:1366px){
 	.caption h3 {
@@ -4310,6 +4320,11 @@ abbr[title], abbr[data-original-title] {
 	header{
 		position: inherit;
 	}
+	.searchBillers{
+		padding-bottom: 1%;
+		margin:28px 3px -12px 3px;
+		border: 2px solid #EB6625;
+}
 }
 @media(max-width:1280px){
 	.banner1, .banner2, .banner3, .banner4 {
@@ -4331,6 +4346,11 @@ abbr[title], abbr[data-original-title] {
 	header{
 		position: inherit;
 	}
+	.searchBillers{
+		padding-bottom: 1%;
+		margin:28px 3px -12px 3px;
+		border: 2px solid #EB6625;
+}
 }
 @media(max-width:1200px){
 	.banner1, .banner2, .banner3, .banner4 {
@@ -4360,6 +4380,11 @@ abbr[title], abbr[data-original-title] {
 	}
 	header{
 		position: inherit;
+	}
+	.searchBillers{
+		padding-bottom: 1%;
+		margin:28px 3px -12px 3px;
+		border: 2px solid #EB6625;
 	}
 }
 @media(max-width:1080px){
@@ -4421,6 +4446,7 @@ abbr[title], abbr[data-original-title] {
 	}
 	h3.w3-head {
 		font-size: 33px;
+		margin-top: 20px;
 	}
 	h3.m-head {
 		font-size: 23px;
@@ -4458,6 +4484,12 @@ abbr[title], abbr[data-original-title] {
 	header{
 		position: inherit;
 	}
+	.searchBillers{
+		padding-bottom: 1%;
+		margin:28px 3px -12px 3px;
+		border: 2px solid #EB6625;
+	}
+	
 }
 @media(max-width:1050px){
 	.w3-subscribe {
@@ -4496,6 +4528,15 @@ abbr[title], abbr[data-original-title] {
 	header{
 		position: inherit;
 	}
+	.searchBillers{
+		padding-bottom: 1%;
+		margin:28px 3px -12px 3px;
+		border: 2px solid #EB6625;
+	}
+	h3.w3-head {
+		font-size: 30px;
+		margin-top: 20px;
+	}
 }
 @media(max-width:1024px){
 	.banner1, .banner2, .banner3, .banner4 {
@@ -4532,6 +4573,15 @@ abbr[title], abbr[data-original-title] {
 	}
 	header{
 		position: inherit;
+	}
+	.searchBillers{
+		padding-bottom: 1%;
+		margin:28px 3px -12px 3px;
+		border: 2px solid #EB6625;
+	}
+	h3.w3-head {
+		font-size: 30px;
+		margin-top: 20px;
 	}
 }
 @media(max-width:991px){
@@ -4667,6 +4717,15 @@ abbr[title], abbr[data-original-title] {
 	header{
 		position: inherit;
 	}
+	.searchBillers{
+		padding-bottom: 1%;
+		margin:28px 3px -12px 3px;
+		border: 2px solid #EB6625;
+	}
+	h3.w3-head {
+		font-size: 30px;
+		margin-top: 20px;
+	}
 }
 @media(max-width:900px){
 	.banner1, .banner2, .banner3, .banner4 {
@@ -4697,7 +4756,7 @@ abbr[title], abbr[data-original-title] {
 	}
 	h3.w3-head {
 		font-size: 28px;
-		margin: 0 0 25px 0;
+		margin: 20px 0 25px 0;
 	}
 	h3.icon-subheading {
 		font-size: 22px;
@@ -4711,6 +4770,11 @@ abbr[title], abbr[data-original-title] {
 	header{
 		position: inherit;
 	}
+	.searchBillers{
+		padding-bottom: 1%;
+		margin:28px 3px -12px 3px;
+		border: 2px solid #EB6625;
+}
 }
 @media(max-width:800px){
 	.caption h3 {
@@ -4773,6 +4837,15 @@ abbr[title], abbr[data-original-title] {
 	header{
 		position: inherit;
 	}
+	.searchBillers{
+		padding-bottom: 1%;
+		margin:28px 3px -12px 3px;
+		border: 2px solid #EB6625;
+	}
+	h3.w3-head {
+		font-size: 30px;
+		margin-top: 20px;
+	}
 }
 @media(max-width:768px){
 	.logo h1 {
@@ -4806,6 +4879,15 @@ abbr[title], abbr[data-original-title] {
 	}
 	header{
 		position: inherit;
+	}
+	.searchBillers{
+		padding-bottom: 1%;
+		margin:28px 3px -12px 3px;
+		border: 2px solid #EB6625;
+	}
+	h3.w3-head {
+		font-size: 30px;
+		margin-top: 20px;
 	}
 }
 @media(max-width:736px){
@@ -4846,6 +4928,15 @@ abbr[title], abbr[data-original-title] {
 	}
 	header{
 		position: inherit;
+	}
+	.searchBillers{
+		padding-bottom: 1%;
+		margin:28px 3px -12px 3px;
+		border: 2px solid #EB6625;
+	}
+	h3.w3-head {
+		font-size: 30px;
+		margin-top: 20px;
 	}
 }
 @media(max-width:667px){
@@ -4944,6 +5035,11 @@ abbr[title], abbr[data-original-title] {
 	header{
 		position: inherit;
 	}
+	.searchBillers{
+		padding-bottom: 1%;
+		margin:28px 3px -12px 3px;
+		border: 2px solid #EB6625;
+}
 }
 @media(max-width:600px){
 	.caption {
@@ -4978,6 +5074,15 @@ abbr[title], abbr[data-original-title] {
 	}
 	header{
 		position: inherit;
+	}
+	.searchBillers{
+		padding-bottom: 1%;
+		margin:28px 3px -12px 3px;
+		border: 2px solid #EB6625;
+	}
+	h3.w3-head {
+		font-size: 30px;
+		margin-top: 20px;
 	}
 }
 @media(max-width:568px){
@@ -5035,6 +5140,15 @@ abbr[title], abbr[data-original-title] {
 	}
 	header{
 		position: inherit;
+	}
+	.searchBillers{
+		padding-bottom: 1%;
+		margin:28px 3px -12px 3px;
+		border: 2px solid #EB6625;
+	}
+	h3.w3-head {
+		font-size: 30px;
+		margin-top: 20px;
 	}
 }
 @media(max-width:480px){
@@ -5200,6 +5314,15 @@ abbr[title], abbr[data-original-title] {
 	header{
 		position: inherit;
 	}
+	.searchBillers{
+		padding-bottom: 1%;
+		margin:28px 3px -12px 3px;
+		border: 2px solid #EB6625;
+	}
+	h3.w3-head {
+		font-size: 30px;
+		margin-top: 20px;
+	}
 }
 @media(max-width:414px){
 	.logo h1 {
@@ -5299,6 +5422,15 @@ abbr[title], abbr[data-original-title] {
 	header{
 		position: inherit;
 	}
+	.searchBillers{
+		padding-bottom: 1%;
+		margin:28px 3px -12px 3px;
+		border: 2px solid #EB6625;
+	}
+	h3.w3-head {
+		font-size: 30px;
+		margin-top: 20px;
+	}
 }
 @media(max-width:384px){
 	.movie-preview {
@@ -5389,6 +5521,15 @@ abbr[title], abbr[data-original-title] {
 	header{
 		position: inherit;
 	}
+	.searchBillers{
+		padding-bottom: 1%;
+		margin:28px 3px -12px 3px;
+		border: 2px solid #EB6625;
+	}
+	h3.w3-head {
+		font-size: 30px;
+		margin-top: 20px;
+	}
 }
 @media(max-width:375px){
 	.movie-preview {
@@ -5436,6 +5577,15 @@ abbr[title], abbr[data-original-title] {
 	}
 	header{
 		position: inherit;
+	}
+	.searchBillers{
+		padding-bottom: 1%;
+		margin:28px 3px -12px 3px;
+		border: 2px solid #EB6625;
+	}
+	h3.w3-head {
+		font-size: 30px;
+		margin-top: 20px;
 	}
 }
 @media(max-width:320px){
@@ -5533,5 +5683,14 @@ abbr[title], abbr[data-original-title] {
 	}
 	header{
 		position: inherit;
+	}
+	.searchBillers{
+		padding-bottom: 1%;
+		margin:28px 3px -12px 3px;
+		border: 2px solid #EB6625;
+	}
+	h3.w3-head {
+		font-size: 30px;
+		margin-top: 20px;
 	}
 }
