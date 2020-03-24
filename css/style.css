@@ -142,9 +142,10 @@ i.glyphicon.glyphicon-menu-hamburger {
 
 
 .tabs-sections {
-  padding: 10px 20px;
-  border: 1px solid #EB6625; 
-width: 661px;}
+  	padding: 10px 20px;
+  	border: 1px solid #EB6625; 
+	/* width: auto; */
+}
 
 
 @media screen and (min-width: 640px) {
