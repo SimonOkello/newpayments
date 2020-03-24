@@ -78,7 +78,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="agileits-tab_nav">
 					<ul class="resp-tabs-list hor_1">
 						<li><i class="icon fa fa-mobile" aria-hidden="true"></i>Buy Airtime</li>
-						<li><a href="pay_bills.html" style="text-decoration: none; color: #403333;"><i class="icon fa fa-money" aria-hidden="true"></i>Pay Your Bills</a></li>
+						<li><i class="icon fa fa-money" aria-hidden="true"></i>Pay Your Bills</li>
 						<li><i class="icon fa fa-credit-card" aria-hidden="true"></i>Utility Bills</li>
 						<li><i class="icon fa fa-user-circle" aria-hidden="true"></i>School Fees</li>
 						<li><i class="icon fa fa-graduation-cap" aria-hidden="true"></i>College Fees</li>
@@ -294,41 +294,509 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <!-- /tab1 -->
 			<!-- tab2 -->
 						<div>
-							
-		                      <!-- <div class="login-form">
-                                  <i class="icon fa fa-television inner-icon" aria-hidden="true"></i>
+							<i class="icon fa fa-money inner-icon" aria-hidden="true"></i>
+		                      <main class="centering-layer  tabs-js">
+
+    <div class="tabs-buttons">
+      <button class="tabs-buttons__btn  tabs-buttons__btn--active  btn-js">Buy KPLC Tokens</button>
+      <button class="tabs-buttons__btn  btn-js">Pay KPLC Bill</button>
+      <button class="tabs-buttons__btn  btn-js">Pay ZUKU</button>
+      <button class="tabs-buttons__btn  btn-js">Pay DSTV</button>
+      <button class="tabs-buttons__btn  btn-js">Pay GOTV</button>
+      <button class="tabs-buttons__btn  btn-js">Pay STARTIMES</button>
+    </div>
+
+    <div class="tabs-sections">
+        <!--START BUY TOKENS -->
+      <div class="tabs-sections__section  tabs-sections__section--active  tab-js  tab-active-js">
+        <div class="login-form">	
 						<form action="pay.html" method="post" id="signup">
-                            
-						<ol>	
+						<ol>							
+							<li>
+                                <h4>Enter your KPLC TOKENS Account number here</h4>
+								<input type="tel" id="tel" name="tel" pattern="\d{11}" placeholder="E.g 45432443233232" required="required" />
+								<p class="validation01">
+									<span class="invalid">Please enter a valid mobile number</span>
+									<span class="valid">That's what we wanted!</span>
+								</p>
+							</li>
                             <li>
-                                <div class="agileits-select">
-                                <select class="selectpicker show-tick" data-live-search="true">
-                                  <option data-tokens="Select Operator">DTH Operator</option>
-                                 <option data-tokens="Safaricom">Safaricom</option>
-                                  <option data-tokens="Airtel">Airtel</option>
-                                  <option data-tokens="Telkom">Telkom</option>
-                                  <option data-tokens="Equitel">Equitel</option>
-                                </select>
-                                </div>
-                            </li>
-                            <li>
-                              <input type="text" id="customer" value="Enter Customer ID" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter Customer ID';}" required="">	
-                            </li>
+                                <h4>Enter your mobile number</h4>
+								<input type="tel" id="tel" name="tel" pattern="\d{10}" placeholder="Enter Mobile Number" required="required" />
+								<p class="validation01">
+									<span class="invalid">Please enter a valid mobile number</span>
+									<span class="valid">That's what we wanted!</span>
+								</p>
+							</li>
                             <li>
                                 <div class="mobile-right ">
+                                    <h4>Enter Amount here</h4>
                                     <div class="mobile-rchge">
-                                        <input type="text" placeholder="Enter amount" name="amount" required="required"  />
+                                        <input type="text" placeholder="Enter amount" name="amount" required="required"  />	
+                                    </div>
+                                <div class="clearfix"></div>
+                                </div>
+                            </li>
+                             <li>
+                                <div class="mobile-right ">
+                                    <h4>How do you want to pay?</h4>
+                                    <div class="mobile-rchge">
+                                      <label class="radio"><input type="radio" id="rdb1" value="1" name="toggler" >Mpesa</label>
+                                      <label class="radio"><input type="radio" id="rdb2" value="2" name="toggler" >EazzyPay</label>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
                             </li>
                             <li>
-                                <input type="submit" class="submit" value="Recharge Now" />
+                            <div id="blk-1" class="toHide" style="display:none">
+                             
+                                <div class="mobile-right ">
+                                    <h4>Enter Your Mpesa Number here E.g 0712345678</h4>
+                                    <div class="mobile-rchge">
+                                      <input type="tel" id="tel" name="mpesa" pattern="\d{10}" placeholder="E.g 0712345678" />
+                                      <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
+                                        <span class="valid">That's what we wanted!</span>
+                                    </p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            
+                            </div>
+                            </li>
+                            <li>
+                            <div id="blk-2" class="toHide" style="display:none">
+                             
+                                <div class="mobile-right ">
+                                    <h4>Enter Your EazzyPay Number here E.g 0712345678</h4>
+                                    <div class="mobile-rchge">
+                                      <input type="tel" id="tel" name="eazzypay" pattern="\d{10}" placeholder="E.g 0712345678" />
+                                      <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
+                                        <span class="valid">That's what we wanted!</span>
+                                    </p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                           
+                            </div>
+                            </li>
+                            <li>
+                                <input type="submit" class="submit" value="Pay Now" />
                             </li>
 				        </ol>
 						</form>	
 																							
-						</div>	 -->
+						</div>
+      </div>
+      <!--END BUY TOKENS -->
+				<!--START PAY KPLC BILL -->
+      <div class="tabs-sections__section  tab-js">
+          <div class="login-form">	
+						<form action="pay.html" method="post" id="signup">
+						<ol>							
+							<li>
+                                <h4>Enter your KPLC Account number here</h4>
+								<input type="tel" id="tel" name="tel" pattern="\d{11}" placeholder="E.g 45432443233232" required="required" />
+								<p class="validation01">
+									<span class="invalid">Please enter a valid mobile number</span>
+									<span class="valid">That's what we wanted!</span>
+								</p>
+							</li>
+                            <li>
+                                <h4>Enter your mobile number</h4>
+								<input type="tel" id="tel" name="tel" pattern="\d{10}" placeholder="Enter Mobile Number" required="required" />
+								<p class="validation01">
+									<span class="invalid">Please enter a valid mobile number</span>
+									<span class="valid">That's what we wanted!</span>
+								</p>
+							</li>
+                            <li>
+                                <div class="mobile-right ">
+                                    <h4>Enter Amount here</h4>
+                                    <div class="mobile-rchge">
+                                        <input type="text" placeholder="Enter amount" name="amount" required="required"  />	
+                                    </div>
+                                <div class="clearfix"></div>
+                                </div>
+                            </li>
+                             <li>
+                                <div class="mobile-right ">
+                                    <h4>How do you want to pay?</h4>
+                                    <div class="mobile-rchge">
+                                      <label class="radio"><input type="radio" id="rdb1" value="1" name="toggler" >Mpesa</label>
+                                      <label class="radio"><input type="radio" id="rdb2" value="2" name="toggler" >EazzyPay</label>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </li>
+                            <li>
+                            <div id="blk-1" class="toHide" style="display:none">
+                             
+                                <div class="mobile-right ">
+                                    <h4>Enter Your Mpesa Number here E.g 0712345678</h4>
+                                    <div class="mobile-rchge">
+                                      <input type="tel" id="tel" name="mpesa" pattern="\d{10}" placeholder="E.g 0712345678" />
+                                      <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
+                                        <span class="valid">That's what we wanted!</span>
+                                    </p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            
+                            </div>
+                            </li>
+                            <li>
+                            <div id="blk-2" class="toHide" style="display:none">
+                             
+                                <div class="mobile-right ">
+                                    <h4>Enter Your EazzyPay Number here E.g 0712345678</h4>
+                                    <div class="mobile-rchge">
+                                      <input type="tel" id="tel" name="eazzypay" pattern="\d{10}" placeholder="E.g 0712345678" />
+                                      <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
+                                        <span class="valid">That's what we wanted!</span>
+                                    </p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                           
+                            </div>
+                            </li>
+                            <li>
+                                <input type="submit" class="submit" value="Pay Now" />
+                            </li>
+				        </ol>
+						</form>
+																							
+						</div>	
+      </div>
+      <!-- END PAY KPLC BILL -->
+				<!-- START PAY ZUKU -->
+      <div class="tabs-sections__section  tab-js">
+          <div class="login-form">	
+						<form action="pay.html" method="post" id="signup">
+						<ol>							
+							<li>
+                                <h4>Enter your ZUKU Account number here</h4>
+								<input type="tel" id="tel" name="tel" pattern="\d{11}" placeholder="E.g 45432443233232" required="required" />
+								<p class="validation01">
+									<span class="invalid">Please enter a valid mobile number</span>
+									<span class="valid">That's what we wanted!</span>
+								</p>
+							</li>
+                            <li>
+                                <h4>Enter your mobile number</h4>
+								<input type="tel" id="tel" name="tel" pattern="\d{10}" placeholder="Enter Mobile Number" required="required" />
+								<p class="validation01">
+									<span class="invalid">Please enter a valid mobile number</span>
+									<span class="valid">That's what we wanted!</span>
+								</p>
+							</li>
+                            <li>
+                                <div class="mobile-right ">
+                                    <h4>Enter Amount here</h4>
+                                    <div class="mobile-rchge">
+                                        <input type="text" placeholder="Enter amount" name="amount" required="required"  />	
+                                    </div>
+                                <div class="clearfix"></div>
+                                </div>
+                            </li>
+                             <li>
+                                <div class="mobile-right ">
+                                    <h4>How do you want to pay?</h4>
+                                    <div class="mobile-rchge">
+                                      <label class="radio"><input type="radio" id="rdb1" value="1" name="toggler" >Mpesa</label>
+                                      <label class="radio"><input type="radio" id="rdb2" value="2" name="toggler" >EazzyPay</label>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </li>
+                            <li>
+                            <div id="blk-1" class="toHide" style="display:none">
+                             
+                                <div class="mobile-right ">
+                                    <h4>Enter Your Mpesa Number here E.g 0712345678</h4>
+                                    <div class="mobile-rchge">
+                                      <input type="tel" id="tel" name="mpesa" pattern="\d{10}" placeholder="E.g 0712345678" />
+                                      <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
+                                        <span class="valid">That's what we wanted!</span>
+                                    </p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            
+                            </div>
+                            </li>
+                            <li>
+                            <div id="blk-2" class="toHide" style="display:none">
+                             
+                                <div class="mobile-right ">
+                                    <h4>Enter Your EazzyPay Number here E.g 0712345678</h4>
+                                    <div class="mobile-rchge">
+                                      <input type="tel" id="tel" name="eazzypay" pattern="\d{10}" placeholder="E.g 0712345678" />
+                                      <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
+                                        <span class="valid">That's what we wanted!</span>
+                                    </p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                           
+                            </div>
+                            </li>
+                            <li>
+                                <input type="submit" class="submit" value="Pay Now" />
+                            </li>
+				        </ol>
+						</form>
+																							
+						</div>	
+      </div>
+      <!-- END PAY ZUKU -->
+				<!-- START PAY DSTV -->
+       <div class="tabs-sections__section  tab-js">
+           <div class="login-form">	
+						<form action="pay.html" method="post" id="signup">
+						<ol>							
+							<li>
+                                <h4>Enter your DSTV Account number here</h4>
+								<input type="tel" id="tel" name="tel" pattern="\d{11}" placeholder="E.g 45432443233232" required="required" />
+								<p class="validation01">
+									<span class="invalid">Please enter a valid mobile number</span>
+									<span class="valid">That's what we wanted!</span>
+								</p>
+							</li>
+                            <li>
+                                <h4>Enter your mobile number</h4>
+								<input type="tel" id="tel" name="tel" pattern="\d{10}" placeholder="Enter Mobile Number" required="required" />
+								<p class="validation01">
+									<span class="invalid">Please enter a valid mobile number</span>
+									<span class="valid">That's what we wanted!</span>
+								</p>
+							</li>
+                            <li>
+                                <div class="mobile-right ">
+                                    <h4>Enter Amount here</h4>
+                                    <div class="mobile-rchge">
+                                        <input type="text" placeholder="Enter amount" name="amount" required="required"  />	
+                                    </div>
+                                <div class="clearfix"></div>
+                                </div>
+                            </li>
+                             <li>
+                                <div class="mobile-right ">
+                                    <h4>How do you want to pay?</h4>
+                                    <div class="mobile-rchge">
+                                      <label class="radio"><input type="radio" id="rdb1" value="1" name="toggler" >Mpesa</label>
+                                      <label class="radio"><input type="radio" id="rdb2" value="2" name="toggler" >EazzyPay</label>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </li>
+                            <li>
+                            <div id="blk-1" class="toHide" style="display:none">
+                             
+                                <div class="mobile-right ">
+                                    <h4>Enter Your Mpesa Number here E.g 0712345678</h4>
+                                    <div class="mobile-rchge">
+                                      <input type="tel" id="tel" name="mpesa" pattern="\d{10}" placeholder="E.g 0712345678" />
+                                      <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
+                                        <span class="valid">That's what we wanted!</span>
+                                    </p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            
+                            </div>
+                            </li>
+                            <li>
+                            <div id="blk-2" class="toHide" style="display:none">
+                             
+                                <div class="mobile-right ">
+                                    <h4>Enter Your EazzyPay Number here E.g 0712345678</h4>
+                                    <div class="mobile-rchge">
+                                      <input type="tel" id="tel" name="eazzypay" pattern="\d{10}" placeholder="E.g 0712345678" />
+                                      <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
+                                        <span class="valid">That's what we wanted!</span>
+                                    </p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                           
+                            </div>
+                            </li>
+                            <li>
+                                <input type="submit" class="submit" value="Pay Now" />
+                            </li>
+				        </ol>
+						</form>
+																							
+						</div>
+      </div>
+      <!-- END PAY DSTV -->
+				<!-- START PAY GOTV -->
+       <div class="tabs-sections__section  tab-js">
+           <div class="login-form">	
+						<form action="pay.html" method="post" id="signup">
+						<ol>							
+							<li>
+                                <h4>Enter your GOTV Account number here</h4>
+								<input type="tel" id="tel" name="tel" pattern="\d{11}" placeholder="E.g 45432443233232" required="required" />
+								<p class="validation01">
+									<span class="invalid">Please enter a valid mobile number</span>
+									<span class="valid">That's what we wanted!</span>
+								</p>
+							</li>
+                            <li>
+                                <h4>Enter your mobile number</h4>
+								<input type="tel" id="tel" name="tel" pattern="\d{10}" placeholder="Enter Mobile Number" required="required" />
+								<p class="validation01">
+									<span class="invalid">Please enter a valid mobile number</span>
+									<span class="valid">That's what we wanted!</span>
+								</p>
+							</li>
+                            <li>
+                                <div class="mobile-right ">
+                                    <h4>Enter Amount here</h4>
+                                    <div class="mobile-rchge">
+                                        <input type="text" placeholder="Enter amount" name="amount" required="required"  />	
+                                    </div>
+                                <div class="clearfix"></div>
+                                </div>
+                            </li>
+                             <li>
+                                <div class="mobile-right ">
+                                    <h4>How do you want to pay?</h4>
+                                    <div class="mobile-rchge">
+                                      <label class="radio"><input type="radio" id="rdb1" value="1" name="toggler" >Mpesa</label>
+                                      <label class="radio"><input type="radio" id="rdb2" value="2" name="toggler" >EazzyPay</label>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </li>
+                            <li>
+                            <div id="blk-1" class="toHide" style="display:none">
+                             
+                                <div class="mobile-right ">
+                                    <h4>Enter Your Mpesa Number here E.g 0712345678</h4>
+                                    <div class="mobile-rchge">
+                                      <input type="tel" id="tel" name="mpesa" pattern="\d{10}" placeholder="E.g 0712345678" />
+                                      <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
+                                        <span class="valid">That's what we wanted!</span>
+                                    </p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            
+                            </div>
+                            </li>
+                            <li>
+                            <div id="blk-2" class="toHide" style="display:none">
+                             
+                                <div class="mobile-right ">
+                                    <h4>Enter Your EazzyPay Number here E.g 0712345678</h4>
+                                    <div class="mobile-rchge">
+                                      <input type="tel" id="tel" name="eazzypay" pattern="\d{10}" placeholder="E.g 0712345678" />
+                                      <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
+                                        <span class="valid">That's what we wanted!</span>
+                                    </p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                           
+                            </div>
+                            </li>
+                            <li>
+                                <input type="submit" class="submit" value="Pay Now" />
+                            </li>
+				        </ol>
+						</form>
+																							
+						</div>	
+      </div>
+      <!-- END PAY GOTV -->
+      <!-- START PAY STAR TIMES -->
+       <div class="tabs-sections__section  tab-js">
+           <div class="login-form">	
+						<form action="pay.html" method="post" id="signup">
+						<ol>							
+							<li>
+                                <h4>Enter your STARTIMES Account number here</h4>
+								<input type="tel" id="tel" name="tel" pattern="\d{11}" placeholder="E.g 45432443233232" required="required" />
+								<p class="validation01">
+									<span class="invalid">Please enter a valid mobile number</span>
+									<span class="valid">That's what we wanted!</span>
+								</p>
+							</li>
+                            <li>
+                                <h4>Enter your mobile number</h4>
+								<input type="tel" id="tel" name="tel" pattern="\d{10}" placeholder="Enter Mobile Number" required="required" />
+								<p class="validation01">
+									<span class="invalid">Please enter a valid mobile number</span>
+									<span class="valid">That's what we wanted!</span>
+								</p>
+							</li>
+                            <li>
+                                <div class="mobile-right ">
+                                    <h4>Enter Amount here</h4>
+                                    <div class="mobile-rchge">
+                                        <input type="text" placeholder="Enter amount" name="amount" required="required"  />	
+                                    </div>
+                                <div class="clearfix"></div>
+                                </div>
+                            </li>
+                             <li>
+                                <div class="mobile-right ">
+                                    <h4>How do you want to pay?</h4>
+                                    <div class="mobile-rchge">
+                                      <label class="radio"><input type="radio" id="rdb1" value="1" name="toggler" >Mpesa</label>
+                                      <label class="radio"><input type="radio" id="rdb2" value="2" name="toggler" >EazzyPay</label>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </li>
+                            <li>
+                            <div id="blk-1" class="toHide" style="display:none">
+                             
+                                <div class="mobile-right ">
+                                    <h4>Enter Your Mpesa Number here E.g 0712345678</h4>
+                                    <div class="mobile-rchge">
+                                      <input type="tel" id="tel" name="mpesa" pattern="\d{10}" placeholder="E.g 0712345678" />
+                                      <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
+                                        <span class="valid">That's what we wanted!</span>
+                                    </p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            
+                            </div>
+                            </li>
+                            <li>
+                            <div id="blk-2" class="toHide" style="display:none">
+                             
+                                <div class="mobile-right ">
+                                    <h4>Enter Your EazzyPay Number here E.g 0712345678</h4>
+                                    <div class="mobile-rchge">
+                                      <input type="tel" id="tel" name="eazzypay" pattern="\d{10}" placeholder="E.g 0712345678" />
+                                      <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
+                                        <span class="valid">That's what we wanted!</span>
+                                    </p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                           
+                            </div>
+                            </li>
+                            <li>
+                                <input type="submit" class="submit" value="Pay Now" />
+                            </li>
+				        </ol>
+						</form>
+																							
+                        </div>	
+                       
+      </div>
+       <!-- END PAY STAR TIMES -->
+    </div>
+
+  </main>
 						</div>
                         <!-- /tab2 -->
                         
@@ -767,7 +1235,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				});
 			</script>
 			<!-- start-smoth-scrolling -->
-		<!-- //here ends scrolling icon -->
+        <!-- //here ends scrolling icon -->
+         <script src="./js/jtabs.js" charset="utf-8"></script>
+  <script>
+    jTabs('.tabs-js', 'tabs-buttons__btn--active', 'tab-active-js');
+  </script>
 </body>
 <!-- //body -->
 </html>
