@@ -149,7 +149,8 @@ width: 661px;}
 
 @media screen and (min-width: 640px) {
   .tabs-buttons {
-    font-size: 0; }
+	font-size: 0; 
+	display: flex;}
 
   .tabs-buttons__btn {
     width: auto;
@@ -5497,6 +5498,11 @@ abbr[title], abbr[data-original-title] {
 		font-size: 30px;
 		margin-top: 20px;
 	}
+	.tabs-sections {
+		padding: 10px 20px;
+		border: 1px solid #EB6625; 
+		width: auto;
+	}
 }
 @media(max-width:384px){
 	.movie-preview {
@@ -5595,6 +5601,11 @@ abbr[title], abbr[data-original-title] {
 	h3.w3-head {
 		font-size: 30px;
 		margin-top: 20px;
+	}
+	.tabs-sections {
+		padding: 10px 20px;
+		border: 1px solid #EB6625; 
+		width: auto;
 	}
 }
 @media(max-width:375px){
