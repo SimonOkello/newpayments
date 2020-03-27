@@ -9,14 +9,6 @@
 <!-- <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />Fontawesome-CSS -->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript">
-$(function() {
-    $("[name=toggler]").click(function(){
-            $('.toHide').hide();
-            $("#blk-"+$(this).val()).show('slow');
-    });
- });
-</script>
 <script type='text/javascript' src='js/jquery-2.2.3.min.js'></script>
 <script src="https://use.fontawesome.com/61515e626a.js"></script>
 <!-- Custom Theme files -->
@@ -143,7 +135,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <div id="blk-1" class="toHide" style="display:none">
                              
                                 <div class="mobile-right ">
-                                    <h4>Enter Your Mpesa Number here E.g 0712345678</h4>
+                                    <h4>Enter Your Mpesa Number.</h4>
                                     <div class="mobile-rchge">
                                       <input type="tel" id="tel" name="mpesa" pattern="\d{10}" placeholder="E.g 0712345678" />
                                       <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
@@ -159,7 +151,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <div id="blk-2" class="toHide" style="display:none">
                              
                                 <div class="mobile-right ">
-                                    <h4>Enter Your EazzyPay Number here E.g 0712345678</h4>
+                                    <h4>Enter Your EazzyPay Number.</h4>
                                     <div class="mobile-rchge">
                                       <input type="tel" id="tel" name="eazzypay" pattern="\d{10}" placeholder="E.g 0712345678" />
                                       <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
@@ -200,7 +192,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</script>
                              -->
 							
-                            
+        <script type="text/javascript">
+            $(function() {
+                $("[name=toggler]").click(function(){
+                    $('.toHide').hide();
+                    $("#blk-"+$(this).val()).show('slow');
+                    });
+            });
+        </script>  
             
                     
 			             </div>
@@ -254,17 +253,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="mobile-right ">
                                     <h4>How do you want to pay?</h4>
                                     <div class="mobile-rchge">
-                                      <label class="radio"><input type="radio" id="rdb1" value="1" name="toggler" >Mpesa</label>
-                                      <label class="radio"><input type="radio" id="rdb2" value="2" name="toggler" >EazzyPay</label>
+                                      <label class="radio"><input type="radio" id="rdb1" value="1" name="tokens" >Mpesa</label>
+                                      <label class="radio"><input type="radio" id="rdb2" value="2" name="tokens" >EazzyPay</label>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
                             </li>
                             <li>
-                            <div id="blk-1" class="toHide" style="display:none">
+                            <div id="token-1" class="toHide" style="display:none">
                              
                                 <div class="mobile-right ">
-                                    <h4>Enter Your Mpesa Number here E.g 0712345678</h4>
+                                    <h4>Enter Your Mpesa Number.</h4>
                                     <div class="mobile-rchge">
                                       <input type="tel" id="tel" name="mpesa" pattern="\d{10}" placeholder="E.g 0712345678" />
                                       <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
@@ -277,10 +276,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </div>
                             </li>
                             <li>
-                            <div id="blk-2" class="toHide" style="display:none">
+                            <div id="token-2" class="toHide" style="display:none">
                              
                                 <div class="mobile-right ">
-                                    <h4>Enter Your EazzyPay Number here E.g 0712345678</h4>
+                                    <h4>Enter Your EazzyPay Number.</h4>
                                     <div class="mobile-rchge">
                                       <input type="tel" id="tel" name="eazzypay" pattern="\d{10}" placeholder="E.g 0712345678" />
                                       <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
@@ -298,7 +297,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				        </ol>
 						</form>	
 																							
-						</div>
+                        </div>
+           <script type="text/javascript">
+            $(function() {
+                $("[name=tokens]").click(function(){
+                    $('.toHide').hide();
+                    $("#token-"+$(this).val()).show('slow');
+                    });
+            });
+        </script>  
       </div>
       <!--END BUY TOKENS -->
 				<!--START PAY KPLC BILL -->
@@ -335,17 +342,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="mobile-right ">
                                     <h4>How do you want to pay?</h4>
                                     <div class="mobile-rchge">
-                                      <label class="radio"><input type="radio" id="rdb1" value="1" name="toggler" >Mpesa</label>
-                                      <label class="radio"><input type="radio" id="rdb2" value="2" name="toggler" >EazzyPay</label>
+                                      <label class="radio"><input type="radio" id="rdb1" value="1" name="bills" >Mpesa</label>
+                                      <label class="radio"><input type="radio" id="rdb2" value="2" name="bills" >EazzyPay</label>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
                             </li>
                             <li>
-                            <div id="blk-1" class="toHide" style="display:none">
+                            <div id="bill-1" class="toHide" style="display:none">
                              
                                 <div class="mobile-right ">
-                                    <h4>Enter Your Mpesa Number here E.g 0712345678</h4>
+                                    <h4>Enter Your Mpesa Number.</h4>
                                     <div class="mobile-rchge">
                                       <input type="tel" id="tel" name="mpesa" pattern="\d{10}" placeholder="E.g 0712345678" />
                                       <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
@@ -358,10 +365,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </div>
                             </li>
                             <li>
-                            <div id="blk-2" class="toHide" style="display:none">
+                            <div id="bill-2" class="toHide" style="display:none">
                              
                                 <div class="mobile-right ">
-                                    <h4>Enter Your EazzyPay Number here E.g 0712345678</h4>
+                                    <h4>Enter Your EazzyPay Number.</h4>
                                     <div class="mobile-rchge">
                                       <input type="tel" id="tel" name="eazzypay" pattern="\d{10}" placeholder="E.g 0712345678" />
                                       <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
@@ -379,7 +386,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				        </ol>
 						</form>
 																							
-						</div>	
+                        </div>
+            <script type="text/javascript">
+            $(function() {
+                $("[name=bills]").click(function(){
+                    $('.toHide').hide();
+                    $("#bill-"+$(this).val()).show('slow');
+                    });
+            });
+        </script>  
       </div>
       <!-- END PAY KPLC BILL -->
 				<!-- START PAY ZUKU -->
@@ -416,17 +431,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="mobile-right ">
                                     <h4>How do you want to pay?</h4>
                                     <div class="mobile-rchge">
-                                      <label class="radio"><input type="radio" id="rdb1" value="1" name="toggler" >Mpesa</label>
-                                      <label class="radio"><input type="radio" id="rdb2" value="2" name="toggler" >EazzyPay</label>
+                                      <label class="radio"><input type="radio" id="rdb1" value="1" name="zuku" >Mpesa</label>
+                                      <label class="radio"><input type="radio" id="rdb2" value="2" name="zuku" >EazzyPay</label>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
                             </li>
                             <li>
-                            <div id="blk-1" class="toHide" style="display:none">
+                            <div id="zuk-1" class="toHide" style="display:none">
                              
                                 <div class="mobile-right ">
-                                    <h4>Enter Your Mpesa Number here E.g 0712345678</h4>
+                                    <h4>Enter Your Mpesa Number.</h4>
                                     <div class="mobile-rchge">
                                       <input type="tel" id="tel" name="mpesa" pattern="\d{10}" placeholder="E.g 0712345678" />
                                       <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
@@ -439,10 +454,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </div>
                             </li>
                             <li>
-                            <div id="blk-2" class="toHide" style="display:none">
+                            <div id="zuk-2" class="toHide" style="display:none">
                              
                                 <div class="mobile-right ">
-                                    <h4>Enter Your EazzyPay Number here E.g 0712345678</h4>
+                                    <h4>Enter Your EazzyPay Number.</h4>
                                     <div class="mobile-rchge">
                                       <input type="tel" id="tel" name="eazzypay" pattern="\d{10}" placeholder="E.g 0712345678" />
                                       <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
@@ -460,7 +475,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				        </ol>
 						</form>
 																							
-						</div>	
+                        </div>	
+            <script type="text/javascript">
+            $(function() {
+                $("[name=zuku]").click(function(){
+                    $('.toHide').hide();
+                    $("#zuk-"+$(this).val()).show('slow');
+                    });
+            });
+        </script>  
       </div>
       <!-- END PAY ZUKU -->
 				<!-- START PAY DSTV -->
@@ -497,17 +520,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="mobile-right ">
                                     <h4>How do you want to pay?</h4>
                                     <div class="mobile-rchge">
-                                      <label class="radio"><input type="radio" id="rdb1" value="1" name="toggler" >Mpesa</label>
-                                      <label class="radio"><input type="radio" id="rdb2" value="2" name="toggler" >EazzyPay</label>
+                                      <label class="radio"><input type="radio" id="rdb1" value="1" name="dstv" >Mpesa</label>
+                                      <label class="radio"><input type="radio" id="rdb2" value="2" name="dstv" >EazzyPay</label>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
                             </li>
                             <li>
-                            <div id="blk-1" class="toHide" style="display:none">
+                            <div id="ds-1" class="toHide" style="display:none">
                              
                                 <div class="mobile-right ">
-                                    <h4>Enter Your Mpesa Number here E.g 0712345678</h4>
+                                    <h4>Enter Your Mpesa Number.</h4>
                                     <div class="mobile-rchge">
                                       <input type="tel" id="tel" name="mpesa" pattern="\d{10}" placeholder="E.g 0712345678" />
                                       <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
@@ -520,10 +543,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </div>
                             </li>
                             <li>
-                            <div id="blk-2" class="toHide" style="display:none">
+                            <div id="ds-2" class="toHide" style="display:none">
                              
                                 <div class="mobile-right ">
-                                    <h4>Enter Your EazzyPay Number here E.g 0712345678</h4>
+                                    <h4>Enter Your EazzyPay Number.</h4>
                                     <div class="mobile-rchge">
                                       <input type="tel" id="tel" name="eazzypay" pattern="\d{10}" placeholder="E.g 0712345678" />
                                       <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
@@ -541,7 +564,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				        </ol>
 						</form>
 																							
-						</div>
+                        </div>
+            <script type="text/javascript">
+            $(function() {
+                $("[name=dstv]").click(function(){
+                    $('.toHide').hide();
+                    $("#ds-"+$(this).val()).show('slow');
+                    });
+            });
+        </script>  
       </div>
       <!-- END PAY DSTV -->
 				<!-- START PAY GOTV -->
@@ -578,17 +609,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="mobile-right ">
                                     <h4>How do you want to pay?</h4>
                                     <div class="mobile-rchge">
-                                      <label class="radio"><input type="radio" id="rdb1" value="1" name="toggler" >Mpesa</label>
-                                      <label class="radio"><input type="radio" id="rdb2" value="2" name="toggler" >EazzyPay</label>
+                                      <label class="radio"><input type="radio" id="rdb1" value="1" name="gotv" >Mpesa</label>
+                                      <label class="radio"><input type="radio" id="rdb2" value="2" name="gotv" >EazzyPay</label>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
                             </li>
                             <li>
-                            <div id="blk-1" class="toHide" style="display:none">
+                            <div id="gt-1" class="toHide" style="display:none">
                              
                                 <div class="mobile-right ">
-                                    <h4>Enter Your Mpesa Number here E.g 0712345678</h4>
+                                    <h4>Enter Your Mpesa Number.</h4>
                                     <div class="mobile-rchge">
                                       <input type="tel" id="tel" name="mpesa" pattern="\d{10}" placeholder="E.g 0712345678" />
                                       <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
@@ -601,10 +632,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </div>
                             </li>
                             <li>
-                            <div id="blk-2" class="toHide" style="display:none">
+                            <div id="gt-2" class="toHide" style="display:none">
                              
                                 <div class="mobile-right ">
-                                    <h4>Enter Your EazzyPay Number here E.g 0712345678</h4>
+                                    <h4>Enter Your EazzyPay Number.</h4>
                                     <div class="mobile-rchge">
                                       <input type="tel" id="tel" name="eazzypay" pattern="\d{10}" placeholder="E.g 0712345678" />
                                       <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
@@ -622,7 +653,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				        </ol>
 						</form>
 																							
-						</div>	
+                        </div>	
+            <script type="text/javascript">
+            $(function() {
+                $("[name=gotv]").click(function(){
+                    $('.toHide').hide();
+                    $("#gt-"+$(this).val()).show('slow');
+                    });
+            });
+        </script>  
       </div>
       <!-- END PAY GOTV -->
       <!-- START PAY STAR TIMES -->
@@ -659,17 +698,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="mobile-right ">
                                     <h4>How do you want to pay?</h4>
                                     <div class="mobile-rchge">
-                                      <label class="radio"><input type="radio" id="rdb1" value="1" name="toggler" >Mpesa</label>
-                                      <label class="radio"><input type="radio" id="rdb2" value="2" name="toggler" >EazzyPay</label>
+                                      <label class="radio"><input type="radio" id="rdb1" value="1" name="star" >Mpesa</label>
+                                      <label class="radio"><input type="radio" id="rdb2" value="2" name="star" >EazzyPay</label>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
                             </li>
                             <li>
-                            <div id="blk-1" class="toHide" style="display:none">
+                            <div id="str-1" class="toHide" style="display:none">
                              
                                 <div class="mobile-right ">
-                                    <h4>Enter Your Mpesa Number here E.g 0712345678</h4>
+                                    <h4>Enter Your Mpesa Number.</h4>
                                     <div class="mobile-rchge">
                                       <input type="tel" id="tel" name="mpesa" pattern="\d{10}" placeholder="E.g 0712345678" />
                                       <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
@@ -682,10 +721,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </div>
                             </li>
                             <li>
-                            <div id="blk-2" class="toHide" style="display:none">
+                            <div id="str-2" class="toHide" style="display:none">
                              
                                 <div class="mobile-right ">
-                                    <h4>Enter Your EazzyPay Number here E.g 0712345678</h4>
+                                    <h4>Enter Your EazzyPay Number.</h4>
                                     <div class="mobile-rchge">
                                       <input type="tel" id="tel" name="eazzypay" pattern="\d{10}" placeholder="E.g 0712345678" />
                                       <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
@@ -703,7 +742,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				        </ol>
 						</form>
 																							
-                        </div>	
+                        </div>
+             <script type="text/javascript">
+            $(function() {
+                $("[name=star]").click(function(){
+                    $('.toHide').hide();
+                    $("#str-"+$(this).val()).show('slow');
+                    });
+            });
+        </script>  	
                        
       </div>
        <!-- END PAY STAR TIMES -->
@@ -762,17 +809,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="mobile-right ">
                                     <h4>How do you want to pay?</h4>
                                     <div class="mobile-rchge">
-                                      <label class="radio"><input type="radio" id="rdb1" value="1" name="toggler" >Mpesa</label>
-                                      <label class="radio"><input type="radio" id="rdb2" value="2" name="toggler" >EazzyPay</label>
+                                      <label class="radio"><input type="radio" id="rdb1" value="1" name="utility" >Mpesa</label>
+                                      <label class="radio"><input type="radio" id="rdb2" value="2" name="utility" >EazzyPay</label>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
                             </li>
                             <li>
-                            <div id="blk-1" class="toHide" style="display:none">
+                            <div id="utl-1" class="toHide" style="display:none">
                              
                                 <div class="mobile-right ">
-                                    <h4>Enter Your Mpesa Number here E.g 0712345678</h4>
+                                    <h4>Enter Your Mpesa Number.</h4>
                                     <div class="mobile-rchge">
                                       <input type="tel" id="tel" name="mpesa" pattern="\d{10}" placeholder="E.g 0712345678" />
                                       <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
@@ -785,10 +832,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </div>
                             </li>
                             <li>
-                            <div id="blk-2" class="toHide" style="display:none">
+                            <div id="utl-2" class="toHide" style="display:none">
                              
                                 <div class="mobile-right ">
-                                    <h4>Enter Your EazzyPay Number here E.g 0712345678</h4>
+                                    <h4>Enter Your EazzyPay Number.</h4>
                                     <div class="mobile-rchge">
                                       <input type="tel" id="tel" name="eazzypay" pattern="\d{10}" placeholder="E.g 0712345678" />
                                       <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
@@ -809,6 +856,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>	
 
                     </div>
+                     <script type="text/javascript">
+            $(function() {
+                $("[name=utility]").click(function(){
+                    $('.toHide').hide();
+                    $("#utl-"+$(this).val()).show('slow');
+                    });
+            });
+        </script>  
                     </div>
                         <!-- /tab3 -->
                         
@@ -862,17 +917,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="mobile-right ">
                                     <h4>How do you want to pay?</h4>
                                     <div class="mobile-rchge">
-                                      <label class="radio"><input type="radio" id="rdb1" value="1" name="toggler" >Mpesa</label>
-                                      <label class="radio"><input type="radio" id="rdb2" value="2" name="toggler" >EazzyPay</label>
+                                      <label class="radio"><input type="radio" id="rdb1" value="1" name="school" >Mpesa</label>
+                                      <label class="radio"><input type="radio" id="rdb2" value="2" name="school" >EazzyPay</label>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
                             </li>
                             <li>
-                            <div id="blk-1" class="toHide" style="display:none">
+                            <div id="sch-1" class="toHide" style="display:none">
                              
                                 <div class="mobile-right ">
-                                    <h4>Enter Your Mpesa Number here E.g 0712345678</h4>
+                                    <h4>Enter Your Mpesa Number.</h4>
                                     <div class="mobile-rchge">
                                       <input type="tel" id="tel" name="mpesa" pattern="\d{10}" placeholder="E.g 0712345678" />
                                       <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
@@ -885,10 +940,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </div>
                             </li>
                             <li>
-                            <div id="blk-2" class="toHide" style="display:none">
+                            <div id="sch-2" class="toHide" style="display:none">
                              
                                 <div class="mobile-right ">
-                                    <h4>Enter Your EazzyPay Number here E.g 0712345678</h4>
+                                    <h4>Enter Your EazzyPay Number.</h4>
                                     <div class="mobile-rchge">
                                       <input type="tel" id="tel" name="eazzypay" pattern="\d{10}" placeholder="E.g 0712345678" />
                                       <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
@@ -906,7 +961,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				        </ol>
 						</form>	
 																							
-						</div>	
+                        </div>	
+            <script type="text/javascript">
+            $(function() {
+                $("[name=school]").click(function(){
+                    $('.toHide').hide();
+                    $("#sch-"+$(this).val()).show('slow');
+                    });
+            });
+        </script>  
 						</div>
                         </div>
                         <!-- /tab4 -->
@@ -962,17 +1025,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="mobile-right ">
                                     <h4>How do you want to pay?</h4>
                                     <div class="mobile-rchge">
-                                      <label class="radio"><input type="radio" id="rdb1" value="1" name="toggler" >Mpesa</label>
-                                      <label class="radio"><input type="radio" id="rdb2" value="2" name="toggler" >EazzyPay</label>
+                                      <label class="radio"><input type="radio" id="rdb1" value="1" name="college" >Mpesa</label>
+                                      <label class="radio"><input type="radio" id="rdb2" value="2" name="college" >EazzyPay</label>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
                             </li>
                             <li>
-                            <div id="blk-1" class="toHide" style="display:none">
+                            <div id="col-1" class="toHide" style="display:none">
                              
                                 <div class="mobile-right ">
-                                    <h4>Enter Your Mpesa Number here E.g 0712345678</h4>
+                                    <h4>Enter Your Mpesa Number.</h4>
                                     <div class="mobile-rchge">
                                       <input type="tel" id="tel" name="mpesa" pattern="\d{10}" placeholder="E.g 0712345678" />
                                       <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
@@ -985,10 +1048,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </div>
                             </li>
                             <li>
-                            <div id="blk-2" class="toHide" style="display:none">
+                            <div id="col-2" class="toHide" style="display:none">
                              
                                 <div class="mobile-right ">
-                                    <h4>Enter Your EazzyPay Number here E.g 0712345678</h4>
+                                    <h4>Enter Your EazzyPay Number.</h4>
                                     <div class="mobile-rchge">
                                       <input type="tel" id="tel" name="eazzypay" pattern="\d{10}" placeholder="E.g 0712345678" />
                                       <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
@@ -1006,7 +1069,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				        </ol>
 						</form>	
 																							
-						</div>	
+                        </div>
+                <script type="text/javascript">
+            $(function() {
+                $("[name=college]").click(function(){
+                    $('.toHide').hide();
+                    $("#col-"+$(this).val()).show('slow');
+                    });
+            });
+        </script>  	
 						</div>
 							
 						</div>
@@ -1060,17 +1131,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="mobile-right ">
                                     <h4>How do you want to pay?</h4>
                                     <div class="mobile-rchge">
-                                      <label class="radio"><input type="radio" id="rdb1" value="1" name="toggler" >Mpesa</label>
-                                      <label class="radio"><input type="radio" id="rdb2" value="2" name="toggler" >EazzyPay</label>
+                                      <label class="radio"><input type="radio" id="rdb1" value="1" name="govn" >Mpesa</label>
+                                      <label class="radio"><input type="radio" id="rdb2" value="2" name="govn" >EazzyPay</label>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
                             </li>
                             <li>
-                            <div id="blk-1" class="toHide" style="display:none">
+                            <div id="gn-1" class="toHide" style="display:none">
                              
                                 <div class="mobile-right ">
-                                    <h4>Enter Your Mpesa Number here E.g 0712345678</h4>
+                                    <h4>Enter Your Mpesa Number.</h4>
                                     <div class="mobile-rchge">
                                       <input type="tel" id="tel" name="mpesa" pattern="\d{10}" placeholder="E.g 0712345678" />
                                       <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
@@ -1083,10 +1154,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </div>
                             </li>
                             <li>
-                            <div id="blk-2" class="toHide" style="display:none">
+                            <div id="gn-2" class="toHide" style="display:none">
                              
                                 <div class="mobile-right ">
-                                    <h4>Enter Your EazzyPay Number here E.g 0712345678</h4>
+                                    <h4>Enter Your EazzyPay Number.</h4>
                                     <div class="mobile-rchge">
                                       <input type="tel" id="tel" name="eazzypay" pattern="\d{10}" placeholder="E.g 0712345678" />
                                       <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
@@ -1104,7 +1175,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				        </ol>
 						</form>	
 																							
-						</div>	
+                        </div>
+                        
+                 <script type="text/javascript">
+            $(function() {
+                $("[name=govn]").click(function(){
+                    $('.toHide').hide();
+                    $("#gn-"+$(this).val()).show('slow');
+                    });
+            });
+        </script>  
 						</div>
 						</div>
                         <!-- /tab6 -->
@@ -1159,17 +1239,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="mobile-right ">
                                     <h4>How do you want to pay?</h4>
                                     <div class="mobile-rchge">
-                                      <label class="radio"><input type="radio" id="rdb1" value="1" name="toggler" >Mpesa</label>
-                                      <label class="radio"><input type="radio" id="rdb2" value="2" name="toggler" >EazzyPay</label>
+                                      <label class="radio"><input type="radio" id="rdb1" value="1" name="hosp" >Mpesa</label>
+                                      <label class="radio"><input type="radio" id="rdb2" value="2" name="hosp" >EazzyPay</label>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
                             </li>
                             <li>
-                            <div id="blk-1" class="toHide" style="display:none">
+                            <div id="doc-1" class="toHide" style="display:none">
                              
                                 <div class="mobile-right ">
-                                    <h4>Enter Your Mpesa Number here E.g 0712345678</h4>
+                                    <h4>Enter Your Mpesa Number.</h4>
                                     <div class="mobile-rchge">
                                       <input type="tel" id="tel" name="mpesa" pattern="\d{10}" placeholder="E.g 0712345678" />
                                       <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
@@ -1182,10 +1262,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </div>
                             </li>
                             <li>
-                            <div id="blk-2" class="toHide" style="display:none">
+                            <div id="doc-2" class="toHide" style="display:none">
                              
                                 <div class="mobile-right ">
-                                    <h4>Enter Your EazzyPay Number here E.g 0712345678</h4>
+                                    <h4>Enter Your EazzyPay Number.</h4>
                                     <div class="mobile-rchge">
                                       <input type="tel" id="tel" name="eazzypay" pattern="\d{10}" placeholder="E.g 0712345678" />
                                       <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
@@ -1203,7 +1283,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				        </ol>
 						</form>	
 																							
-						</div>	
+                        </div>
+                 <script type="text/javascript">
+            $(function() {
+                $("[name=hosp]").click(function(){
+                    $('.toHide').hide();
+                    $("#doc-"+$(this).val()).show('slow');
+                    });
+            });
+        </script>  	
 						</div>
 						</div>
                         <!-- /tab7 -->
@@ -1257,17 +1345,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="mobile-right ">
                                     <h4>How do you want to pay?</h4>
                                     <div class="mobile-rchge">
-                                      <label class="radio"><input type="radio" id="rdb1" value="1" name="toggler" >Mpesa</label>
-                                      <label class="radio"><input type="radio" id="rdb2" value="2" name="toggler" >EazzyPay</label>
+                                      <label class="radio"><input type="radio" id="rdb1" value="1" name="retail" >Mpesa</label>
+                                      <label class="radio"><input type="radio" id="rdb2" value="2" name="retail" >EazzyPay</label>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
                             </li>
                             <li>
-                            <div id="blk-1" class="toHide" style="display:none">
+                            <div id="rtl-1" class="toHide" style="display:none">
                              
                                 <div class="mobile-right ">
-                                    <h4>Enter Your Mpesa Number here E.g 0712345678</h4>
+                                    <h4>Enter Your Mpesa Number.</h4>
                                     <div class="mobile-rchge">
                                       <input type="tel" id="tel" name="mpesa" pattern="\d{10}" placeholder="E.g 0712345678" />
                                       <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
@@ -1280,10 +1368,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </div>
                             </li>
                             <li>
-                            <div id="blk-2" class="toHide" style="display:none">
+                            <div id="rtl-2" class="toHide" style="display:none">
                              
                                 <div class="mobile-right ">
-                                    <h4>Enter Your EazzyPay Number here E.g 0712345678</h4>
+                                    <h4>Enter Your EazzyPay Number.</h4>
                                     <div class="mobile-rchge">
                                       <input type="tel" id="tel" name="eazzypay" pattern="\d{10}" placeholder="E.g 0712345678" />
                                       <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
@@ -1301,7 +1389,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				        </ol>
 						</form>		
 																							
-						</div>	
+                        </div>
+                 <script type="text/javascript">
+            $(function() {
+                $("[name=retail]").click(function(){
+                    $('.toHide').hide();
+                    $("#rtl-"+$(this).val()).show('slow');
+                    });
+            });
+        </script>  
 						</div>
 						</div>
                         <!-- /tab8 -->
@@ -1355,17 +1451,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="mobile-right ">
                                     <h4>How do you want to pay?</h4>
                                     <div class="mobile-rchge">
-                                      <label class="radio"><input type="radio" id="rdb1" value="1" name="toggler" >Mpesa</label>
-                                      <label class="radio"><input type="radio" id="rdb2" value="2" name="toggler" >EazzyPay</label>
+                                      <label class="radio"><input type="radio" id="rdb1" value="1" name="buzz" >Mpesa</label>
+                                      <label class="radio"><input type="radio" id="rdb2" value="2" name="buzz" >EazzyPay</label>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
                             </li>
                             <li>
-                            <div id="blk-1" class="toHide" style="display:none">
+                            <div id="buz-1" class="toHide" style="display:none">
                              
                                 <div class="mobile-right ">
-                                    <h4>Enter Your Mpesa Number here E.g 0712345678</h4>
+                                    <h4>Enter Your Mpesa Number.</h4>
                                     <div class="mobile-rchge">
                                       <input type="tel" id="tel" name="mpesa" pattern="\d{10}" placeholder="E.g 0712345678" />
                                       <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
@@ -1378,10 +1474,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </div>
                             </li>
                             <li>
-                            <div id="blk-2" class="toHide" style="display:none">
+                            <div id="buz-2" class="toHide" style="display:none">
                              
                                 <div class="mobile-right ">
-                                    <h4>Enter Your EazzyPay Number here E.g 0712345678</h4>
+                                    <h4>Enter Your EazzyPay Number.</h4>
                                     <div class="mobile-rchge">
                                       <input type="tel" id="tel" name="eazzypay" pattern="\d{10}" placeholder="E.g 0712345678" />
                                       <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
@@ -1399,7 +1495,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				        </ol>
 						</form>		
 																							
-						</div>	
+                        </div>
+                         <script type="text/javascript">
+            $(function() {
+                $("[name=buzz]").click(function(){
+                    $('.toHide').hide();
+                    $("#buz-"+$(this).val()).show('slow');
+                    });
+            });
+        </script>  	
 						</div>
                         </div>
 
@@ -1452,17 +1556,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="mobile-right ">
                                     <h4>How do you want to pay?</h4>
                                     <div class="mobile-rchge">
-                                      <label class="radio"><input type="radio" id="rdb1" value="1" name="toggler" >Mpesa</label>
-                                      <label class="radio"><input type="radio" id="rdb2" value="2" name="toggler" >EazzyPay</label>
+                                      <label class="radio"><input type="radio" id="rdb1" value="1" name="insurance" >Mpesa</label>
+                                      <label class="radio"><input type="radio" id="rdb2" value="2" name="insurance" >EazzyPay</label>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
                             </li>
                             <li>
-                            <div id="blk-1" class="toHide" style="display:none">
+                            <div id="ins-1" class="toHide" style="display:none">
                              
                                 <div class="mobile-right ">
-                                    <h4>Enter Your Mpesa Number here E.g 0712345678</h4>
+                                    <h4>Enter Your Mpesa Number.</h4>
                                     <div class="mobile-rchge">
                                       <input type="tel" id="tel" name="mpesa" pattern="\d{10}" placeholder="E.g 0712345678" />
                                       <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
@@ -1475,10 +1579,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </div>
                             </li>
                             <li>
-                            <div id="blk-2" class="toHide" style="display:none">
+                            <div id="ins-2" class="toHide" style="display:none">
                              
                                 <div class="mobile-right ">
-                                    <h4>Enter Your EazzyPay Number here E.g 0712345678</h4>
+                                    <h4>Enter Your EazzyPay Number.</h4>
                                     <div class="mobile-rchge">
                                       <input type="tel" id="tel" name="eazzypay" pattern="\d{10}" placeholder="E.g 0712345678" />
                                       <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
@@ -1496,7 +1600,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				        </ol>
 						</form>		
 																							
-						</div>	
+                        </div>
+                        
+             <script type="text/javascript">
+            $(function() {
+                $("[name=insurance]").click(function(){
+                    $('.toHide').hide();
+                    $("#ins-"+$(this).val()).show('slow');
+                    });
+            });
+        </script>  
 						</div>
                         </div>
                         <!-- tab 11 -->
@@ -1548,17 +1661,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="mobile-right ">
                                     <h4>How do you want to pay?</h4>
                                     <div class="mobile-rchge">
-                                      <label class="radio"><input type="radio" id="rdb1" value="1" name="toggler" >Mpesa</label>
-                                      <label class="radio"><input type="radio" id="rdb2" value="2" name="toggler" >EazzyPay</label>
+                                      <label class="radio"><input type="radio" id="rdb1" value="1" name="finance" >Mpesa</label>
+                                      <label class="radio"><input type="radio" id="rdb2" value="2" name="finance" >EazzyPay</label>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
                             </li>
                             <li>
-                            <div id="blk-1" class="toHide" style="display:none">
+                            <div id="fn-1" class="toHide" style="display:none">
                              
                                 <div class="mobile-right ">
-                                    <h4>Enter Your Mpesa Number here E.g 0712345678</h4>
+                                    <h4>Enter Your Mpesa Number.</h4>
                                     <div class="mobile-rchge">
                                       <input type="tel" id="tel" name="mpesa" pattern="\d{10}" placeholder="E.g 0712345678" />
                                       <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
@@ -1571,10 +1684,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </div>
                             </li>
                             <li>
-                            <div id="blk-2" class="toHide" style="display:none">
+                            <div id="fn-2" class="toHide" style="display:none">
                              
                                 <div class="mobile-right ">
-                                    <h4>Enter Your EazzyPay Number here E.g 0712345678</h4>
+                                    <h4>Enter Your EazzyPay Number.</h4>
                                     <div class="mobile-rchge">
                                       <input type="tel" id="tel" name="eazzypay" pattern="\d{10}" placeholder="E.g 0712345678" />
                                       <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
@@ -1592,7 +1705,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				        </ol>
 						</form>		
 																							
-						</div>	
+                        </div>
+                 <script type="text/javascript">
+            $(function() {
+                $("[name=finance]").click(function(){
+                    $('.toHide').hide();
+                    $("#fn-"+$(this).val()).show('slow');
+                    });
+            });
+        </script>  	
 						</div>
                         </div>
                         
@@ -1645,17 +1766,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="mobile-right ">
                                     <h4>How do you want to pay?</h4>
                                     <div class="mobile-rchge">
-                                      <label class="radio"><input type="radio" id="rdb1" value="1" name="toggler" >Mpesa</label>
-                                      <label class="radio"><input type="radio" id="rdb2" value="2" name="toggler" >EazzyPay</label>
+                                      <label class="radio"><input type="radio" id="rdb1" value="1" name="charity" >Mpesa</label>
+                                      <label class="radio"><input type="radio" id="rdb2" value="2" name="charity" >EazzyPay</label>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
                             </li>
                             <li>
-                            <div id="blk-1" class="toHide" style="display:none">
+                            <div id="chrt-1" class="toHide" style="display:none">
                              
                                 <div class="mobile-right ">
-                                    <h4>Enter Your Mpesa Number here E.g 0712345678</h4>
+                                    <h4>Enter Your Mpesa Number.</h4>
                                     <div class="mobile-rchge">
                                       <input type="tel" id="tel" name="mpesa" pattern="\d{10}" placeholder="E.g 0712345678" />
                                       <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
@@ -1668,10 +1789,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </div>
                             </li>
                             <li>
-                            <div id="blk-2" class="toHide" style="display:none">
+                            <div id="chrt-2" class="toHide" style="display:none">
                              
                                 <div class="mobile-right ">
-                                    <h4>Enter Your EazzyPay Number here E.g 0712345678</h4>
+                                    <h4>Enter Your EazzyPay Number.</h4>
                                     <div class="mobile-rchge">
                                       <input type="tel" id="tel" name="eazzypay" pattern="\d{10}" placeholder="E.g 0712345678" />
                                       <p class="validation01"><span class="invalid">Please enter a valid mobile number</span>
@@ -1689,7 +1810,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				        </ol>
 						</form>		
 																							
-						</div>	
+                        </div>
+                 <script type="text/javascript">
+            $(function() {
+                $("[name=charity]").click(function(){
+                    $('.toHide').hide();
+                    $("#chrt-"+$(this).val()).show('slow');
+                    });
+            });
+        </script>  	
 						</div>
 						</div>
                         
@@ -1856,4 +1985,4 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </body>
 <!-- //body -->
 </html>
-<!-- //html -->
+<!-- //html --
