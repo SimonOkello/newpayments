@@ -3,10 +3,11 @@
 **New Payments** is a template that allows one to buy airtime and pay bills.
 
 ## Prerequisites
+1. Install your favourite Browser
 
-You need to install code editor on your computer.
+2. You also need to install code editor on your computer for code review.
 
-Download VS Code[Here](https://code.visualstudio.com/)
+   Download VS Code[Here](https://code.visualstudio.com/)
 
 ## Installation
 
@@ -18,7 +19,7 @@ Download VS Code[Here](https://code.visualstudio.com/)
 
    `cd newpayments`
 
-6. Finally run the index.html file in your favourite browser
+3. Finally run the index.html file in your favourite browser
    
   
 
